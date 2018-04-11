@@ -1,0 +1,42 @@
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+  <title>Audio</title>
+  <link rel="stylesheet" href="css/audioMain.css">
+  </head>
+  <body>
+
+    <script>
+  function playSound(clicked_ID){
+
+       var audio = document.getElementById("audio"+clicked_ID);
+       audio.play();
+       // console.log("audio"+clicked_ID);
+                 }
+   </script>
+
+<!-- <input type="button" value="PLAY"  onclick="play()"> -->
+<audio id="audioone" src="sounds/bubble-pop.wav"></audio>
+<audio id="audiotwo" src="sounds/clap.wav"></audio>
+<audio id="audiothree" src="sounds/boop.wav"></audio>
+<audio id="audiofour" src="sounds/kick.wav"></audio>
+<audio id="audiofive" src="sounds/snares.wav"></audio>
+<audio id="audiosix" src="sounds/whistle.wav"></audio>
+<audio id="audioseven" src="sounds/shake.wav"></audio>
+<audio id="audioeight" src="sounds/tapesnare.wav"></audio>
+
+
+<!-- <div> -->
+<div class="quarterWidth" id="one" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="two" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="three" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="four" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="five" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="six" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="seven" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+  <div class="quarterWidth" id="eight" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+<!-- </div> -->
+
+
+ </body>
+ </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>boop beep bop boop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <link href="css/audioMain.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+    function playSound(clicked_ID){
+
+       var audio = document.getElementById("audio"+clicked_ID);
+       audio.play();
+       // console.log("audio"+clicked_ID);
+                 }
+   </script>
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <audio id="audioone" src="sounds/bubble-pop.wav"></audio>
+          <audio id="audiotwo" src="sounds/clap.wav"></audio>
+          <audio id="audiothree" src="sounds/boop.wav"></audio>
+          <audio id="audiofour" src="sounds/kick.wav"></audio>
+          <audio id="audiofive" src="sounds/snares.wav"></audio>
+          <audio id="audiosix" src="sounds/whistle.wav"></audio>
+          <audio id="audioseven" src="sounds/shake.wav"></audio>
+          <audio id="audioeight" src="sounds/tapesnare.wav"></audio>
+
+          <div class="quarterWidth" id="one" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="two" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="three" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="four" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="five" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="six" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="seven" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+          <div class="quarterWidth" id="eight" onclick="playSound(this.id)" ontouchstart="playSound(this.id)"></div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script> -->
+    <!-- <script type='text/javascript' src='js/dynamicpage.js'></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

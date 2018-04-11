@@ -1,0 +1,57 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.quarterWidth{
+	/*position: relative;*/
+	width: 25%;
+	height: 10em;
+	float: left;
+	-webkit-transition: opacity .25s ease-out;
+  	-moz-transition: opacity .25s ease-out;
+ 	-o-transition: opacity .25s ease-out;
+ 	transition: opacity.25s ease-out;
+}
+
+.quarterWidth:hover{
+	opacity:.5;
+}
+
+.boarderGlow{
+	border: 2px solid #dadada;
+    border-radius: 7px
+}
+
+#one{
+	background-color: red;
+}
+
+#two{
+	background-color: yellow;
+}
+
+#three{
+	background-color: green;
+}
+
+#four{
+	background-color: blue;
+}
+
+#five{
+	background-color: cyan;
+}
+
+#six{
+	background-color: magenta;
+}
+
+#seven{
+	background-color: purple;
+}
+
+#eight{
+	background-color: orange;
+}
